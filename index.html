@@ -3,10 +3,26 @@
 <html lang="fr">
 
 <head>
-	<title>Portfolio Nina Carducci</title>
+	<title>Nina Carducci. Photographe à Bordeau</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Nina Cardussi : photographe professionnelle à Bordeaux">
 	<meta charset="UTF-8">
+
+
+	<!-- Meta balise pour Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:creator" content="@nina_carducci">
+	<meta name="twitter:title" content="Nina Carducci, photographe sur Bordeaux">
+	<meta name="twitter:description"
+		content="Photographe sur Bordeaux, spécialisé dans les photos de mariages, des entreprises et des concerts.">
+	<meta name="twitter:image" content="https://nina-carducci.github.io/assets/images/nina.avif">
+	<!-- Open Graph meta -->
+	<meta property="og:title" content="Nina Carducci">
+	<meta property="og:type" content="website">
+	<meta property="og:description"
+		content="Photographe sur Bordeaux, spécialisé dans les photos de mariages, des entreprises et des concerts.">
+	<meta property="og:site_name" content="https://nina-carducci.github.io/">
+	<meta property="og:image" content="https://nina-carducci.github.io/assets/images/nina.avif">
 
 	<link rel="preload" href="./assets/bootstrap/purged.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript>
@@ -26,6 +42,39 @@
 	<script src="./assets/scripts.js" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
 
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Nina Caducci",
+			"image": "https://nina-carducci.github.io/assets/images/nina.avif",
+			"description": "Photographe professionnelle sur Bordeaux",
+			"@id": "",
+			"url": "https://nina-carducci.github.io/",
+			"telephone": "05 56 67 78 89",
+			"priceRange": "de 50€ à 400€",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressCountry": "FR"
+			},
+			"openingHoursSpecification": {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Monday",
+					"Friday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday"
+				],
+				"opens": "10:00",
+				"closes": "19:00"
+			},
+			"sameAs": "https://www.instagram.com/ninacarducci.photo/?hl=fr" 
+		}
+		</script>
 
 </head>
 
@@ -45,7 +94,7 @@
 		</nav>
 	</header>
 	<main>
-		<div id="header">
+		<section id="header">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -86,8 +135,8 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
-		</div>
-		<div id="about">
+		</section>
+		<aside id="about">
 			<div class="picture left">
 				<img src="./assets/images/nina.avif" alt="photo de Nina Carducci">
 			</div>
@@ -108,8 +157,8 @@
 					tendresse
 					et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</div>
-		</div>
-		<section id="gallery">
+		</aside>
+		<article id="gallery">
 			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
 				<div class="gallery">
@@ -137,14 +186,16 @@
 						alt="femme avec un grand sourire " />
 				</div>
 			</div>
-			<blockquote class="quote">
-				<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est
-					traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en
-					photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
-				<cite class="quote__author">- Richard Avedon</cite>
-			</blockquote>
-		</section>
-		<section id="services">
+			<figure>
+				<blockquote class="quote">
+					<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est
+						traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en
+						photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
+					<figcaption class="quote__author">- Richard Avedon</figcaption>
+				</blockquote>
+			</figure>
+		</article>
+		<article id="services">
 			<h3 class="title">Mes services</h3>
 			<div class="container">
 				<div class="service">
@@ -157,7 +208,6 @@
 						<h4>350€/demi journée</h4>
 						<span>Matériel, déplacement inclus</span>
 					</div>
-
 				</div>
 				<div class="service">
 					<div class="service__description">
@@ -184,12 +234,14 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<blockquote class="quote">
-			<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou
-				une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
-			<cite class="quote__author">- Richard Avedon</cite>
-		</blockquote>
+		</article>
+		<figure>
+			<blockquote class="quote">
+				<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou
+					une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
+				<figcaption class="quote__author">- Richard Avedon</figcaption>
+			</blockquote>
+		</figure>
 	</main>
 	<footer id="contact">
 		<div class="container">
