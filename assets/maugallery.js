@@ -141,7 +141,7 @@
 
       $(imagesCollection).each(function (i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          //check
+          //decrement
           index = i - 1;
         }
       });
@@ -177,7 +177,7 @@
 
       $(imagesCollection).each(function (i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          //check
+          //increment
           index = i + 1;
         }
       });
@@ -228,16 +228,11 @@
       if ($(this).hasClass("active-tag")) {
         return;
       }
-      /////////////////////////////
+
       $(".active.active-tag").parent().attr("aria-selected", false);
       $(".active.active-tag").removeClass("active active-tag");
       $(this).addClass("active active-tag");
       $(this).parent().attr("aria-selected", true);
-
-      // $(".active-tag").removeClass("active active-tag");
-      // $(this).addClass("active-tag");
-
-      ///////////////////////////////
 
       var tag = $(this).data("images-toggle");
 
