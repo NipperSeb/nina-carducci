@@ -228,7 +228,7 @@
       if ($(this).hasClass("active-tag")) {
         return;
       }
-
+      //Ajout d'une class active et aria-selected
       $(".active.active-tag").parent().attr("aria-selected", false);
       $(".active.active-tag").removeClass("active active-tag");
       $(this).addClass("active active-tag");
